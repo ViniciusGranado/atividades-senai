@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logar input {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+.logar button {
+  background-color: #0da039f1;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 22px;
+  border: 1px solid #999;
+}
+
+.hero {
+  background-color: #d8d7d73e;
+  padding: 3rem 4rem;
+}
+.container {
+  margin: auto;
+  max-width: 1000px;
+}
+.container p {
+  padding: 3rem 0;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.botao {
+  background-color: #2681cc;
+  border-radius: 5px;
+  box-shadow: 0 10px 8px 0 rgba(161, 137, 137, 0.2);
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+.botao.primary {
+  background-color: #2681cc;
+}
+.botao.secondary {
+  background-color: #fff;
+  color: #000;
+}
+.botao:hover {
+  box-shadow: 0 10px 8px 0 rgba(161, 137, 137, 0.5);
+}
+h2 {
+  padding: 10px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  align-items: center;
+  background-color: coral;
+  color: #fff;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  width: 150px;
+}
+.card.azul {
+  background-color: rgb(62, 60, 167);
+}
+.card.salmao {
+  background-color: coral;
+}
+.card.verde {
+  background-color: rgb(60, 167, 69);
+}
