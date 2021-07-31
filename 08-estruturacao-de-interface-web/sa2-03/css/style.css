@@ -5,3 +5,87 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+header,
+section {
+  padding: 3rem;
+}
+
+/* HEADER */
+.header {
+}
+
+/* MAIN */
+main {
+  display: grid;
+  grid-template-areas:
+    'video       video'
+    'info        info'
+    'acoes       acoes'
+    'canal       inscricao'
+    'sugeridos   sugeridos'
+    'addon       addon';
+  margin: auto;
+  max-width: 1100px;
+}
+
+/* VIDEO */
+.video {
+  background-color: #333;
+  grid-area: video;
+}
+
+/* INFO */
+.info {
+  background-color: #c51d1d;
+  grid-area: info;
+}
+
+/* AÇÕES */
+.acoes {
+  background-color: #7fff00;
+  grid-area: acoes;
+}
+
+/* CANAL */
+.canal {
+  background-color: #ff1493;
+  grid-area: canal;
+}
+
+/* INSCRIÇÕES */
+.inscricao {
+  background-color: #006400;
+  grid-area: inscricao;
+}
+
+/* SUGERIDOS */
+.sugeridos {
+  background-color: #ffd700;
+  grid-area: sugeridos;
+}
+
+/* COMERCIAL */
+.addon {
+  background-color: #483d8b;
+  grid-area: addon;
+  display: none;
+}
+
+@media (min-width: 700px) {
+  /* MAIN */
+  main {
+    grid-template-areas:
+      'video       video       addon'
+      'video       video       sugeridos'
+      'info        info        sugeridos'
+      'acoes       acoes       sugeridos'
+      'canal       inscricao   sugeridos';
+    margin: auto;
+  }
+
+  /* COMERCIAL */
+  .addon {
+    display: initial;
+  }
+}
