@@ -1,0 +1,31 @@
+
+body {
+  padding: 20px 0;
+}
+
+/* MAIN */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.img {
+  margin: 0 auto 30px;
+}
+
+h1, h2 {
+  text-align: left;
+}
+h3 {
+  text-align: center;
+}
+h1 {
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.texto ul {
+  list-style-type: disc;
+}
