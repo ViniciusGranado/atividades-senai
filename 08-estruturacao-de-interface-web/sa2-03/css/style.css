@@ -6,18 +6,40 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header,
-section {
-  padding: 3rem;
-}
-
 /* HEADER */
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header .logo img {
+  width: 100px;
+}
+
+.header .search {
+  display: none;
+}
+.header .search input {
+  border: 2px solid #CCC;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5rem;
+  width: 400px;
+}
+
+.header .logar .button {
+  background: none;
+  border: 2px solid #3950d4;
+  color: #3950d4;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
 }
 
 /* MAIN */
 main {
   display: grid;
+  gap: 5px;
   grid-template-areas:
     'video       video'
     'info        info'
@@ -31,8 +53,23 @@ main {
 
 /* VIDEO */
 .video {
-  background-color: #333;
   grid-area: video;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  padding: 1rem 0 56% 1rem;
+}
+.video iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 /* INFO */
@@ -68,11 +105,16 @@ main {
 /* COMERCIAL */
 .addon {
   background-color: #483d8b;
-  grid-area: addon;
   display: none;
+  grid-area: addon;
 }
 
 @media (min-width: 700px) {
+  /* HEADER */
+  .header .search {
+    display: initial;
+  }
+
   /* MAIN */
   main {
     grid-template-areas:

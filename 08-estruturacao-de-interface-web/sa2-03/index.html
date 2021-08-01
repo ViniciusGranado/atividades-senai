@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>YouTube</title>
   </head>
 
   <body>
-    <header class='header'>Header</header>
+    <header class="header">
+      <div class="logo">
+        <img src="images/youtube.png" alt="YouTube" />
+      </div>
+      <div class="search">
+        <input type="search" placeholder="Pesquisar" />
+      </div>
+      <div class="logar">
+        <button class="button">Fazer Login</button>
+      </div>
+    </header>
 
     <main>
-      <section class="video">Video</section>
+      <section class="video">
+        <iframe
+          src="https://www.youtube.com/embed/vXNdirdTJ4A"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
 
       <section class="info">Informações</section>
 
