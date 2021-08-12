@@ -1,0 +1,10 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
+img.souvenir-img {
+  max-width: 60%;
+}
+p {
+  font-size: 2rem;
+}

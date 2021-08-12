@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tóquio - Pacote de Viagem</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <main class="container bg-light">
+      <section class="intro container">
+        <h1 style="font-size: 5vw" class='text-center p-3'>Tóquio - R$2099,99</h1>
+        <img src="img/toquio.jpg" alt="Tóquio" class="img-fluid" />
+      </section>
+
+      <section class="pagamento">
+        <h2 style="font-size: 3vw" class='text-center p-3'>Formas de Pagamento</h2>
+        <p class='text-center'>À vista: R$1.994,05 com 5% de desconto</p>
+        <p class='text-center'>À prazo: R$2099,99 em até 10x sem juros</p>
+      </section>
+
+      <section class="locais">
+        <h2 style="font-size: 3vw" class='text-center p-3'>Locais</h2>
+        <img src="img/parque-ueno.jpg" alt="Parque Ueno" class="img-fluid" />
+        <p class='text-center'>O Parque Ueno</p>
+      </section>
+
+      <section class="compras">
+        <h2 style="font-size: 3vw" class='text-center p-3'>Compras</h2>
+        <img src="img/souvenir01.jpg" alt="Souvenir 01" class="img-fluid souvenir-img p-2" />
+        <img src="img/souvenir03.jpg" alt="Souvenir 03" class="img-fluid souvenir-img p-2" />
+        <img src="img/souvenir02.jpg" alt="Souvenir 02" class="img-fluid souvenir-img p-2" />
+      </section>
+
+      <section class="gastronomia">
+        <h2 style="font-size: 3vw" class='text-center p-3'>Gastronomia</h2>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide p-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/gastronomia01.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/gastronomia02.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/gastronomia03.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
