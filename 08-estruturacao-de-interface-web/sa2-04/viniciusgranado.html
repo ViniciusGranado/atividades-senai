@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cálculo de Viagem</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <button type="button" class="btn btn-primary">Cálculo de Viagem</button>
+
+    <div class="alert alert-primary mensagem-container" role="alert">
+      <h2>Orçamento</h2>
+    </div>
+
+    <script>
+      const mensagemContainer = document.querySelector('.mensagem-container');
+
+      const adicionarParagrafo = (mensagem, valor) => {
+        const paragrafo = document.createElement('p');
+        const elementoMensagem = document.createTextNode(
+          `${mensagem}: ${valor}`
+        );
+
+        paragrafo.appendChild(elementoMensagem);
+        mensagemContainer.appendChild(paragrafo);
+      };
+
+      const calcular = () => {
+        console.log('oi');
+        const nome = window.prompt('Digite o seu nome:');
+        const passageiros = window.prompt(
+          'Digite a quantidade de passageiros: '
+        );
+        const valor = window.prompt('Digite o valor individual da viagem: ');
+
+        const valorFinal = passageiros * valor;
+
+        adicionarParagrafo('Nome do cliente', nome);
+        adicionarParagrafo('Valor da viagem', `R$${valorFinal.toFixed(2)}`);
+
+        const linha = document.createElement('hr');
+        mensagemContainer.appendChild(linha);
+      };
+
+      const botao = document.querySelector('.btn');
+      botao.addEventListener('click', calcular);
+    </script>
+  </body>
+</html>
