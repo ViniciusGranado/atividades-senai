@@ -20,12 +20,11 @@ const aumentaVolume = () => {
   video.volume !== 1 && (video.volume += 0.2);
 };
 const diminuiVolume = () => {
-    video.volume >= 0.1 && (video.volume -= 0.2);
+  video.volume >= 0.1 && (video.volume -= 0.2);
 };
 const mute = () => {
   video.muted = !video.muted;
 };
-
 
 const btnPlay = document.querySelector('.play');
 btnPlay.addEventListener('click', play);
