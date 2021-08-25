@@ -1,0 +1,29 @@
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.video .player {
+  max-width: 100vw;
+}
+
+.container-botoes {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.container-botoes button {
+  background-color: #007CFF;
+  border: none;
+  color: #FFF;
+  padding: 0.5rem 1rem;
+}
+.container-botoes button:active {
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.404);
+}
+
+@media (max-width: 767px) {
+  .container-botoes {
+    flex-direction: column;
+  }
+}
