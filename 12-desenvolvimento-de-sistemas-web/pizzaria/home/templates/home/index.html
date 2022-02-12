@@ -1,0 +1,49 @@
+{% load static%}
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <img src="{% static 'img/logo.png' %}" alt="">
+        <div class="menu">
+            <a href="">home</a>
+            <a href="">carrinho</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Pizzaria Campinas, o melhor forno a lenha da região</h1>
+        <p>Venha conhecer as pizzas mais quentes do momento, pizza boa
+            é igual musica você sabe que é bom na primeira nota.
+        </p>
+        <a href="#">saiba mais</a>
+    </div>
+        <div class="main">
+            <div class="conteudo">
+                <h3>Produtos</h3>
+                <hr>
+                <div class="geral">
+                     {% for dados in produtos %}
+                    <div class="cards">
+                        <img width="50px" height="50px" src="{{dados.foto.url}}" alt="">
+                        <div class="produto">
+                            <h4>{{dados.nome}}</h4>
+                            R$ {{dados.preco}}
+                            {{dados.categoria}}
+                            {{dados.status}}
+                       {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+</html>
