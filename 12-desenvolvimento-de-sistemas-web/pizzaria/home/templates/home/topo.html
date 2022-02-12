@@ -1,0 +1,29 @@
+{% load static %}
+
+<!doctype html>
+<html lang="pt">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+      <title>Pizzaria</title>
+  </head>
+
+  <body>
+    <nav>
+        <img src="{% static 'img/logo.png' %}" alt="">
+        <div class="menu">
+            <a class="bt" href="{% url 'home' %}">home</a>
+            <a class="bt novo" href="">carrinho</a>
+            <a class="bt novo" href="{% url 'salvar_produto' %}">entrar</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <h1>pizzaria campinas, o melhor forno a lenha da região </h1>
+        <p>Venha conhecer as pizzas mais quentes do momento, pizza boa
+            é igual música você sabe que é bom na primeira nota.
+        </p>
+        <a href="#">saiba mais</a>
+    </div>
