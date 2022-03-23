@@ -1,0 +1,28 @@
+h2 {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+form {
+  margin: 0 auto;
+  width: 25rem;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  background-color: #00aeff;
+  color: #fff;
+  font-size: 1.2rem;
+}

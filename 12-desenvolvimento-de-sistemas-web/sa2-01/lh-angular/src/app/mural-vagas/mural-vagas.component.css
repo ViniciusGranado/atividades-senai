@@ -1,6 +1,18 @@
 .lista-vagas {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0.5rem;
+  justify-content: center;
+}
+
+.card {
+  min-height: 30rem;
+}
+
+.button {
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: #00aeff;
+  color: #fff;
 }
